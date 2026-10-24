@@ -1,0 +1,560 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #fff;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --coral: #cc626b;
+    --coral-dark: #b94f5b;
+    --teal: #54bfc0;
+}
+
+/* Top Bar */
+.top-bar {
+    background: #ca626b;
+    color: white;
+    font-size: 10px;
+    padding: 7px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    background: white;
+    color: #ca626b;
+}
+
+.top-contact span {
+    margin: 0 8px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 7px 0;
+}
+
+.logo {
+    color: #cb626b;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #444;
+    font-size: 12px;
+    padding: 10px 12px;
+}
+
+.navbar .nav-link:hover {
+    color: var(--coral);
+}
+
+.search-btn {
+    background: #edf6f1;
+    color: #777;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 11px;
+}
+
+.btn-coral {
+    background: var(--coral);
+    color: white;
+    border: 1px solid var(--coral);
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-size: 11px;
+}
+
+.btn-coral:hover {
+    background: var(--coral-dark);
+    color: white;
+}
+
+.sub-nav {
+    background: #f8f8f8;
+    padding: 8px 0;
+    color: #999;
+    font-size: 11px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 330px;
+    background-image:
+        linear-gradient(rgba(13, 49, 61, .52),
+                        rgba(13, 49, 61, .52)),
+        url("https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=1800&q=85");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 43px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.hero-content p {
+    color: #f1eeee;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Categories */
+.category-section {
+    padding-top: 30px;
+}
+
+.category-card {
+    height: 118px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px #00000012;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+.category-card span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5px;
+    text-align: center;
+    background: rgba(171, 95, 83, .85);
+    color: white;
+    font-size: 11px;
+}
+
+/* Section Headings */
+.section-space {
+    padding-top: 35px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-heading h2,
+.about-section > h2 {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-heading a {
+    color: #9ab9d1;
+    font-size: 10px;
+}
+
+/* Providers */
+.provider-card {
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px #00000010;
+}
+
+.provider-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.provider-card span,
+.mini-provider span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(126, 190, 173, .9);
+    color: #222;
+    text-align: center;
+    font-size: 10px;
+    padding: 6px 2px;
+}
+
+/* Services */
+.service-card {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 7px #00000012;
+    background: white;
+}
+
+.service-card > img {
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 10px;
+}
+
+.service-info h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.service-info p {
+    color: #999;
+    font-size: 9px;
+    margin-bottom: 5px;
+}
+
+.stars {
+    color: #b9a34b;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.stars small {
+    color: #9ab9d1;
+    font-size: 9px;
+    letter-spacing: 0;
+}
+
+.service-info .btn {
+    font-size: 9px;
+    color: #777;
+    border-color: #ddd;
+}
+
+/* Join Providers */
+.join-section {
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.join-section h2 {
+    font-size: 23px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.join-section p {
+    max-width: 300px;
+    color: #777;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.join-btn {
+    min-width: 120px;
+}
+
+.mini-provider {
+    height: 112px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #00000010;
+}
+
+.mini-provider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Newsletter */
+.newsletter {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+.newsletter h2 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.newsletter p {
+    color: #999;
+    font-size: 10px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    max-width: 330px;
+    margin: auto;
+    background: #e8f5ef;
+    border-radius: 3px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.newsletter-form i {
+    color: #6c8c80;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 9px 8px;
+    background: transparent;
+    font-size: 10px;
+}
+
+.newsletter-form button {
+    border-radius: 0;
+}
+
+/* Download App */
+.download-banner {
+    min-height: 260px;
+    border-radius: 10px;
+    background-image:
+        linear-gradient(rgba(7, 58, 62, .83),
+                        rgba(7, 58, 62, .83)),
+        url("https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1600&q=80");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.download-content {
+    padding: 30px;
+    max-width: 430px;
+}
+
+.download-content h2 {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.download-content p {
+    font-size: 11px;
+    line-height: 1.8;
+    color: #e1e8e7;
+    margin-bottom: 15px;
+}
+
+.download-content .btn {
+    font-size: 10px;
+    padding: 8px 13px;
+    margin: 0 5px 5px 0;
+}
+
+.coral-text {
+    color: var(--coral);
+}
+
+/* About Henna */
+.about-section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.about-section > h2 {
+    margin-bottom: 15px;
+}
+
+.about-card {
+    min-height: 145px;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+}
+
+.about-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    font-size: 11px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, .88);
+}
+
+.coral-gradient {
+    background: linear-gradient(120deg, #d8616b, #ff8068);
+}
+
+.teal-gradient {
+    background: linear-gradient(120deg, #278f92, #5bd2cb);
+}
+
+/* Footer */
+footer {
+    padding: 25px 0 15px;
+    color: #888;
+}
+
+.footer-description {
+    max-width: 360px;
+    font-size: 10px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+footer p a {
+    color: var(--coral);
+}
+
+.footer-links h3 {
+    color: #444;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: block;
+    color: #999;
+    font-size: 10px;
+    margin-bottom: 7px;
+}
+
+.footer-links a:hover {
+    color: var(--coral);
+}
+
+.copyright {
+    text-align: center;
+    color: #aaa;
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .top-contact {
+        display: none;
+    }
+
+    .hero {
+        min-height: 300px;
+    }
+
+    .provider-card {
+        height: 145px;
+    }
+
+    .nav-actions {
+        padding: 10px 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .top-bar {
+        font-size: 9px;
+    }
+
+    .hero {
+        min-height: 280px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .category-card {
+        height: 125px;
+    }
+
+    .section-space {
+        padding-top: 28px;
+    }
+
+    .provider-card {
+        height: 150px;
+    }
+
+    .service-card > img {
+        height: 120px;
+    }
+
+    .join-section {
+        padding-top: 35px;
+    }
+
+    .mini-provider {
+        height: 95px;
+    }
+
+    .download-banner {
+        min-height: 260px;
+    }
+
+    .download-content {
+        padding: 22px;
+    }
+
+    .download-content h2 {
+        font-size: 23px;
+    }
+
+    .about-card {
+        min-height: 130px;
+    }
+}
